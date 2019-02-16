@@ -158,6 +158,9 @@ table {
   max-width: 1024px;
   margin: 0 auto;
 }
+.header .nav {
+  display: none;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -176,6 +179,15 @@ header #hamburger {
 }
 header #hamburger:hover {
   cursor: pointer;
+}
+header .close-button {
+  display: none;
+}
+header .close-button:hover {
+  cursor: pointer;
+}
+header .expanded-nav {
+  display: flex;
 }
 .container {
   max-width: 1024px;
@@ -203,4 +215,5 @@ header #hamburger:hover {
 }
 .container section {
   max-width: 850px;
+  margin: 35px auto;
 }
