@@ -3,6 +3,9 @@
   margin: 0 auto;
 
   .jumbotron{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 
     h1{
       position: absolute;
@@ -35,10 +38,33 @@
     margin: 35px auto;
 
     .desktop{
-      
+      // nothing now;
     }
+    .mobile {
+      display: none;
+      @media @mobile{
+        display: block;
+      }
+      .futureandsmith {
+        .top1{
+          display: flex;
+
+          @media @mobile {
+            flex-direction: column;
+          }
+          .text{
+            margin-top: 50px;
+
+          }
+          
+
+        }
+        
+      }
+   
 
   }
+  
   
 
 }
