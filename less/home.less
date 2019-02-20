@@ -1,11 +1,9 @@
-.container {
+.container { 
   max-width: 1024px;
   margin: 0 auto;
 
   .jumbotron{
-    position: absolute;
-    width: 100%;
-    z-index: 1;
+   
 
     h1{
       position: absolute;
@@ -34,37 +32,133 @@
 
   section {
 
+
     max-width: 850px;
     margin: 35px auto;
 
     .desktop{
       // nothing now;
+      @media @mobile{
+        display: none;
+      }
     }
     .mobile {
       display: none;
       @media @mobile{
         display: block;
       }
-      .futureandsmith {
-        .top1{
-          display: flex;
+    }
+    .futureandsmith {
+      .top-cta{
+        display: flex;
 
-          @media @mobile {
-            flex-direction: column;
-          }
-          .text{
-            margin-top: 50px;
+        @media @mobile {
+          flex-direction: column;
+        }
+        .text{
+          margin-top: 50px;
+
+          h2 {
+            font-weight: bold;
+            font-size: 28px;
+            color: #222222;
+            margin-bottom: 20px;
+            margin-top: 20px;
 
           }
-          
+          p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 25px;
+
+          }
+          .buttstyle {
+            border: 1px solid #222222;
+            height: 45px;
+            width:100px;
+            margin-top: 20px;
+            background: white;
+          }
 
         }
+        .home-img1{
+          margin: 40px 0 50px 20px;
+        }
+        .home-img2{
+          margin: 30px 20px 50px 0;
+        }
+        .text-two{
+          margin: 50px 0 0 20px;
+          .future-text();
+        }
+        
+
+      }
+
+
+      
+    }
+
+    .recents {
+      margin-top: 30px;
+
+      #recent{
+        font-weight: bold;
+        font-size: 28px;
+        color: #222222;
+        margin-bottom: 30px;
+
+
+      }
+    }
+    .recent-divs{
+      display: flex;
+      flex-direction: column;
+
+      img{
+        margin-top: 25px;
         
       }
-   
+      .button{
+        border: 1px solid white;
+        background-color: #d8d8d8;
+        font-size: 22px;
+        height: 60px;
+        width:35%;
+        letter-spacing: 6px;
+      }
+      .button-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
 
-  }
-  
-  
+        .villas{
+          position:relative;
+          bottom: 30px;
+          left: 545px;
+        }
+        .outskirts{
+          position:relative;
+          bottom: 30px;
 
+        }
+        .blocks{
+          position:relative;
+          bottom: 30px;
+          left: 545px;
+        }
+      }
+
+      p{
+        font-weight: normal;
+        font-size: 16px;
+        align-self: center;
+        width: 50%;
+        line-height: 25px;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom:20px;
+      }
+    }
+}
 }

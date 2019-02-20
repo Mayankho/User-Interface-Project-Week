@@ -4,52 +4,84 @@
     background: @nav-bg;
     position: fixed;
     z-index: 1;
-};
+    // margin-top:30px;
+}
 
 .header{
     max-width: 1024px;
     margin: 0 auto;
-
-    .nav{
-        display: none;
-    }
-
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-    
-    .logo{
-        color: white;
-        font-size: 24px;
-        font-weight: bold;
-        &:hover {
-            cursor: pointer;
-        }
-    }
-    #hamburger {
-        &:hover{
-            cursor:pointer;
-        }
-        height: 20px;
-    }
-    .close-button {
-        display: none;
-        &:hover{
-            cursor: pointer;
-        }
-    }
-    .expanded-nav {
+    header {
         display: flex;
-        height: 100%;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px 0;
         
+        .logo{
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        #hamburger {
+            &:hover{
+                cursor:pointer;
+            }
+            height: 20px;
+        }
+        .close-button {
+            display: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .expanded-nav {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 24px;
+            line-height: 80px;
+            color: white;
 
+            a{
+                color:white;
+                text-decoration: none;
+                &:hover{
+                    cursor:pointer;
+                    color: black;
+                }
 
+            }
+        }
+        .nav-ghost{
+            display: none;
+        }
     }
-    
+}
+
+.expanded{
+    height: 100vh;
+    width: 1024px;
+    margin:0;
+    background: @nav-bg;
+    z-index: 10;
+    opacity:0.9;
+    margin: 0 auto;
+}
+
+.expanded-header {
+    height: 100%;
+    width: 100%;
+    background:@nav-bg;
+    margin: 0 auto;
 
 }
+
+.expanded-header-div{
+    width: 100%;
+    height: 100%;
+    background:@nav-bg;
+    opacity: 0.9;
+}
+

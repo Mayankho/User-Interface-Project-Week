@@ -12,6 +12,35 @@ html body {
   font-size: 62.5%;
   font-family: 'Roboto', Arial, sans-serif;
 }
+.future-text h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.future-text p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+.future-text .buttstyle {
+  border: 1px solid #222222;
+  height: 45px;
+  width: 100px;
+  margin-top: 20px;
+  background: white;
+}
+.header-style h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+}
+.header-style h3 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+}
 /*------------------------------------*\
 RESET
 \*------------------------------------*/
@@ -158,36 +187,135 @@ table {
   max-width: 1024px;
   margin: 0 auto;
 }
-.header .nav {
-  display: none;
-}
-header {
+.header header {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
 }
-header .logo {
+.header header .logo {
   color: white;
   font-size: 24px;
   font-weight: bold;
 }
-header .logo:hover {
+.header header .logo:hover {
   cursor: pointer;
 }
-header #hamburger {
+.header header #hamburger {
   height: 20px;
 }
-header #hamburger:hover {
+.header header #hamburger:hover {
   cursor: pointer;
 }
-header .close-button {
+.header header .close-button {
   display: none;
 }
-header .close-button:hover {
+.header header .close-button:hover {
   cursor: pointer;
 }
-header .expanded-nav {
+.header header .expanded-nav {
   display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 24px;
+  line-height: 80px;
+  color: white;
+}
+.header header .expanded-nav a {
+  color: white;
+  text-decoration: none;
+}
+.header header .expanded-nav a:hover {
+  cursor: pointer;
+  color: black;
+}
+.header header .nav-ghost {
+  display: none;
+}
+.expanded {
+  height: 100vh;
+  width: 1024px;
+  margin: 0;
+  background: #99a4af;
+  z-index: 10;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+.expanded-header {
+  height: 100%;
+  width: 100%;
+  background: #99a4af;
+  margin: 0 auto;
+}
+.expanded-header-div {
+  width: 100%;
+  height: 100%;
+  background: #99a4af;
+  opacity: 0.9;
+}
+.footer-div {
+  width: 100%;
+  background: #828282;
+  margin-top: 20px;
+}
+footer {
+  width: 1024px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+footer .contact {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  padding: 40px 0;
+}
+footer .contact h3 {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+}
+footer .contact .collab {
+  font-size: 12px;
+  width: 40%;
+}
+footer .contact .collab #email {
+  width: 100%;
+}
+footer .contact .collab #email .email-text {
+  border-radius: 5px;
+  height: 35px;
+  width: 65%;
+  border: 1px solid grey;
+  margin: 20px 0;
+}
+footer .contact .addresses {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 60%;
+}
+footer .contact .addresses h3 {
+  width: 100%;
+}
+footer .contact .addresses address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100;
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+}
+footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  color: white;
 }
 .container {
   max-width: 1024px;
@@ -216,4 +344,220 @@ header .expanded-nav {
 .container section {
   max-width: 850px;
   margin: 35px auto;
+}
+@media only screen and (max-width: 500px) {
+  .container section .desktop {
+    display: none;
+  }
+}
+.container section .mobile {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .container section .mobile {
+    display: block;
+  }
+}
+.container section .futureandsmith .top-cta {
+  display: flex;
+}
+@media only screen and (max-width: 500px) {
+  .container section .futureandsmith .top-cta {
+    flex-direction: column;
+  }
+}
+.container section .futureandsmith .top-cta .text {
+  margin-top: 50px;
+}
+.container section .futureandsmith .top-cta .text h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container section .futureandsmith .top-cta .text p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+.container section .futureandsmith .top-cta .text .buttstyle {
+  border: 1px solid #222222;
+  height: 45px;
+  width: 100px;
+  margin-top: 20px;
+  background: white;
+}
+.container section .futureandsmith .top-cta .home-img1 {
+  margin: 40px 0 50px 20px;
+}
+.container section .futureandsmith .top-cta .home-img2 {
+  margin: 30px 20px 50px 0;
+}
+.container section .futureandsmith .top-cta .text-two {
+  margin: 50px 0 0 20px;
+}
+.container section .futureandsmith .top-cta .text-two h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container section .futureandsmith .top-cta .text-two p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+.container section .futureandsmith .top-cta .text-two .buttstyle {
+  border: 1px solid #222222;
+  height: 45px;
+  width: 100px;
+  margin-top: 20px;
+  background: white;
+}
+.container section .recents {
+  margin-top: 30px;
+}
+.container section .recents #recent {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+.container section .recent-divs {
+  display: flex;
+  flex-direction: column;
+}
+.container section .recent-divs img {
+  margin-top: 25px;
+}
+.container section .recent-divs .button {
+  border: 1px solid white;
+  background-color: #d8d8d8;
+  font-size: 22px;
+  height: 60px;
+  width: 35%;
+  letter-spacing: 6px;
+}
+.container section .recent-divs .button-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container section .recent-divs .button-div .villas {
+  position: relative;
+  bottom: 30px;
+  left: 545px;
+}
+.container section .recent-divs .button-div .outskirts {
+  position: relative;
+  bottom: 30px;
+}
+.container section .recent-divs .button-div .blocks {
+  position: relative;
+  bottom: 30px;
+  left: 545px;
+}
+.container section .recent-divs p {
+  font-weight: normal;
+  font-size: 16px;
+  align-self: center;
+  width: 50%;
+  line-height: 25px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container .jumbotron .services-logo {
+  position: relative;
+  bottom: 100px;
+  left: 80px;
+  text-shadow: 5px 5px grey;
+}
+@media only screen and (max-width: 500px) {
+  .container .jumbotron .services-logo {
+    top: 175px;
+    left: 50px;
+  }
+}
+.container .top-box {
+  max-width: 854px;
+  margin: 20px auto;
+}
+.container .top-box .top-box-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+.tab-navigator {
+  max-width: 854px;
+  margin: 0 auto;
+}
+.tab-navigator .tab-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+  .tab-navigator .tab-links {
+    flex-direction: column;
+  }
+}
+.tab-navigator .tab-links .tab-link {
+  width: 25%;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.tab-navigator .tab-links .tab-link h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 500px) {
+  .tab-navigator .tab-links .tab-link {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+.tab-navigator .tab-links .tab-link:hover {
+  color: white;
+  background: #222222;
+}
+.tab-navigator .tab-links .tab-selected {
+  background: #5e9fb9;
+}
+.tab-navigator .tab-item {
+  display: none;
+  margin: 50px 0 100px 0;
+}
+.tab-navigator .tab-item .info {
+  width: 100%;
+}
+.tab-navigator .tab-item .info .heading {
+  font-size: 28px;
+}
+.tab-navigator .tab-item .info p {
+  margin: 20px 20px 20px 0;
+  font-size: 16px;
+  line-height: 24px;
+  width: 50%;
+}
+.tab-navigator .tab-item .services-img {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .tab-navigator .tab-item .services-img {
+    justify-content: center;
+  }
+}
+.tab-navigator .tab-selected {
+  display: flex;
+}
+@media only screen and (max-width: 500px) {
+  .tab-navigator .tab-selected {
+    flex-direction: column;
+  }
 }
