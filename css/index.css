@@ -3,7 +3,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 * {
   box-sizing: border-box;
@@ -469,23 +469,27 @@ footer .copyright {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.container .jumbotron .services-logo {
+.container .services-logo,
+.jumbotron .services-logo {
   position: relative;
   bottom: 100px;
   left: 80px;
   text-shadow: 5px 5px grey;
 }
 @media only screen and (max-width: 500px) {
-  .container .jumbotron .services-logo {
+  .container .services-logo,
+  .jumbotron .services-logo {
     top: 175px;
     left: 50px;
   }
 }
-.container .top-box {
+.container .top-box,
+.jumbotron .top-box {
   max-width: 854px;
   margin: 20px auto;
 }
-.container .top-box .top-box-text {
+.container .top-box .top-box-text,
+.jumbotron .top-box .top-box-text {
   font-size: 16px;
   line-height: 24px;
 }
